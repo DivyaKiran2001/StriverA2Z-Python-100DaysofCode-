@@ -19,6 +19,7 @@ class Solution:
             if hash_arr[ord(ch)]>0:
                 cnt+=1
             hash_arr[ord(ch)]-=1
+            # Shrink window when we have all required characters
             while cnt==len(t):
                 if r-l+1<minlen:
                     minlen=r-l+1
